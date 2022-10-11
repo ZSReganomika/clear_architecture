@@ -8,7 +8,7 @@ import 'package:clear_architecture_test_flutter/features/number_trivia/presentat
 import 'package:dartz/dartz.dart';
 import 'package:analyzer/exception/exception.dart';
 
-import '../../../../core/platform/ntwork_info.dart';
+import '../../../../core/network/ntwork_info.dart';
 
 typedef Future<NumberTriviaModel> _ConcreteOrRandomChooser();
 
