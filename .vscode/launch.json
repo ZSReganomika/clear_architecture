@@ -8,7 +8,10 @@
             "name": "Flutter: Run all Tests",
             "type": "dart",
             "request": "launch",
-            "program": "./test/"
+            "program": "./test/",
+            "args": [
+                "--no-sound-null-safety"
+            ]
         },
         {
             "name": "clear_architecture_test_flutter",
