@@ -4,6 +4,12 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "name": "Flutter: Attach to Device",
+            "type": "dart",
+            "request": "attach"
+        },
         {
             "name": "Flutter: Run all Tests",
             "type": "dart",
@@ -16,7 +22,10 @@
         {
             "name": "clear_architecture_test_flutter",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": [
+                "--no-sound-null-safety"
+            ]
         },
         {
             "name": "clear_architecture_test_flutter (profile mode)",

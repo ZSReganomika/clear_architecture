@@ -17,11 +17,11 @@ Future<void> init() async {
   //! Features - Number Trivia
 
   //Bloc
-  sl.registerFactory(() => NumberTriviaBloc(
+  sl.registerFactory<NumberTriviaBloc>(() => NumberTriviaBloc(
       concrete: sl(),
       random: sl(),
       inputConverter:
-          sl())); //регисттрируется через фабрику так как внутри есть логика удаления
+          sl())); //регистрируется через фабрику так как внутри есть логика удаления
 
   //Usecases
   sl.registerLazySingleton(() => GetConcreteNumberTrivia(sl()));
