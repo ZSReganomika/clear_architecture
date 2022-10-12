@@ -55,13 +55,13 @@ void main() {
       when(mockInputConverter.stringToUnsignedInteger('sgsdg'))
           .thenReturn(Left(InvalidInputFailure()));
 
-      block.add(GetTriviaForConcreteNumber(tNumberString));
-
       final expected = [
         Empty(),
         Error(errorMessage: '', message: INVALID_INPUT_FAILURE_MESSAGE)
       ];
       expectLater(block.state, emitsInOrder(expected));
+
+       block.add(GetTriviaForConcreteNumber(tNumberString));
     });
   });
 }
