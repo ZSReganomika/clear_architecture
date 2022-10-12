@@ -1,10 +1,10 @@
 import 'package:clear_architecture_test_flutter/core/error/failures.dart';
-import 'package:clear_architecture_test_flutter/features/number_trivia/presentation/domain/entities/number_trivia.dart';
-import 'package:clear_architecture_test_flutter/features/number_trivia/presentation/domain/repositories/number_trivia_repository.dart';
+import 'package:clear_architecture_test_flutter/features/number_trivia/domain/entities/number_trivia.dart';
+import 'package:clear_architecture_test_flutter/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-import '../../../../../core/usecase/usecase.dart';
+import '../../../../core/usecase/usecase.dart';
 
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;

@@ -1,4 +1,4 @@
-import '../../presentation/domain/entities/number_trivia.dart';
+import '../../domain/entities/number_trivia.dart';
 import '../models/number_trivia_model.dart';
 
 abstract class NumberTriviaRemoteDataSorce {

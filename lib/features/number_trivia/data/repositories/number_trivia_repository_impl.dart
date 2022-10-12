@@ -2,13 +2,13 @@ import 'package:clear_architecture_test_flutter/core/error/exceptions.dart';
 import 'package:clear_architecture_test_flutter/features/number_trivia/data/datasources/number_trivia_local_data_source.dart';
 import 'package:clear_architecture_test_flutter/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
 import 'package:clear_architecture_test_flutter/features/number_trivia/data/models/number_trivia_model.dart';
-import 'package:clear_architecture_test_flutter/features/number_trivia/presentation/domain/entities/number_trivia.dart';
+import 'package:clear_architecture_test_flutter/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:clear_architecture_test_flutter/core/error/failures.dart';
-import 'package:clear_architecture_test_flutter/features/number_trivia/presentation/domain/repositories/number_trivia_repository.dart';
+import 'package:clear_architecture_test_flutter/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:analyzer/exception/exception.dart';
 
-import '../../../../core/network/ntwork_info.dart';
+import '../../../../core/network/network_info.dart';
 
 typedef Future<NumberTriviaModel> _ConcreteOrRandomChooser();
 
